@@ -1,0 +1,1 @@
+Extract clinical laboratory parameters. Do NOT diagnose, prescribe, or provide medical certainty. State only what the report lists.

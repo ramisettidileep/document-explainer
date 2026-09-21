@@ -1,0 +1,1 @@
+Extract opening balance, closing balance, deposits, withdrawals, and transactions. Never calculate arithmetic with LLM.

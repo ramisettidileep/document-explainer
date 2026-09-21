@@ -1,0 +1,55 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Document Explainer Agent Local Architecture
+
+Globals:
+  Function:
+    Timeout: 60
+    MemorySize: 512
+    Runtime: python3.11
+    Environment:
+      Variables:
+        ENVIRONMENT: local
+        OLLAMA_BASE_URL: http://127.0.0.1:11434
+        OLLAMA_MODEL: llama3.2
+        STORAGE_MODE: local_memory
+
+Resources:
+  DocumentsFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: backend/
+      Handler: functions.documents.handler.lambda_handler
+      Events:
+        CreateDoc:
+          Type: Api
+          Properties:
+            Path: /documents
+            Method: post
+        ListDocs:
+          Type: Api
+          Properties:
+            Path: /documents
+            Method: get
+        GetDoc:
+          Type: Api
+          Properties:
+            Path: /documents/{id}
+            Method: get
+        DeleteDoc:
+          Type: Api
+          Properties:
+            Path: /documents/{id}
+            Method: delete
+
+  ChatFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: backend/
+      Handler: functions.chat.handler.lambda_handler
+      Events:
+        ChatDoc:
+          Type: Api
+          Properties:
+            Path: /documents/{id}/chat
+            Method: post

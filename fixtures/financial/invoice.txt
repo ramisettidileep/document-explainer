@@ -1,0 +1,5 @@
+TAX INVOICE
+Subtotal: 100.00
+Tax: 18.00
+Total: 118.00
+Payment due upon receipt.

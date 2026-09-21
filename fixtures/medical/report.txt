@@ -1,0 +1,6 @@
+CLINICAL LABORATORY REPORT
+Patient: Jane Doe
+Date: 2026-03-12
+Hemoglobin: 13.4 g/dL (12.0 - 15.5)
+Platelets: 250 10^3/uL (150 - 450)
+Doctor: Dr. Smith

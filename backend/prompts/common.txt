@@ -1,0 +1,1 @@
+Extract key fields, flags, and action items grounded strictly on document content. Never fabricate references or page numbers.

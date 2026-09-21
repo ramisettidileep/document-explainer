@@ -1,0 +1,1 @@
+Extract invoices, interest, principal, taxes, and payment schedules.

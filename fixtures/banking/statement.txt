@@ -1,0 +1,6 @@
+MONTHLY BANK STATEMENT
+Account Holder: Alex Smith
+Opening Balance: 1000.00
+Total Deposits: 500.00
+Total Withdrawals: 200.00
+Closing Balance: 1300.00

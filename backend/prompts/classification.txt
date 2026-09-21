@@ -1,0 +1,1 @@
+Classify the given document into one of: medical, banking, insurance, legal, financial, utility, or general. Output strictly in JSON.
